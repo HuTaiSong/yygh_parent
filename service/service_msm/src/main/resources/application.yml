@@ -1,0 +1,36 @@
+# 服务端口
+server:
+  port: 8204
+
+spring:
+  application:
+    # 服务名
+    name: service-msm
+  jackson:
+    #返回json的全局时间格式
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  profiles:
+    # 环境设置：dev、test、prod
+    active: dev
+  #配置nacos
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+  redis:
+    port: 6379
+    host: 192.168.6.100
+
+  #rabbitmq地址
+  rabbitmq:
+    host: 192.168.6.100
+    port: 5672
+    username: guest
+    password: guest
+
+#  spring.rabbitmq.host=192.168.188.129
+#  spring.rabbitmq.port=5672
+#  spring.rabbitmq.username=guest
+#  spring.rabbitmq.password=guest
+

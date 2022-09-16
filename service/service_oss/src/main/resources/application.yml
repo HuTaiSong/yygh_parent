@@ -1,0 +1,22 @@
+server:
+  port: 8205
+
+spring:
+  application:
+    name: service-oss
+  profiles:
+    active: dev
+  servlet:
+    multipart:
+      max-file-size: 1024MB
+      max-request-size: 1024MB
+
+#阿里云 OSS
+#不同的服务器，地址不同
+aliyun:
+  oss:
+    file:
+      bucketname: yygh-repository
+      endpoint: oss-cn-beijing.aliyuncs.com
+      keyid: LTAI5tGt9EU9bNJUEuEgHuLB
+      keysecret: GE7WjUKChRrtquzkSXoETAh389UVev

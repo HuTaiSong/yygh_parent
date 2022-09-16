@@ -1,0 +1,17 @@
+# 服务端口
+server:
+  port: 8209
+
+spring:
+  application:
+    # 服务名
+    name: service-statistics
+  profiles:
+    # 环境设置：dev、test、prod
+    active: dev
+
+  #配置nacos
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
