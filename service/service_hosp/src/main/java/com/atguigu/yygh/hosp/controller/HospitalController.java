@@ -49,4 +49,14 @@ public class HospitalController {
             @PathVariable String id) {
         return R.ok().data("hospital",hospitalService.show(id));
     }
+
+
+    @ApiOperation(value = "测试接口")
+    @GetMapping("test/{id}")
+    public R testController(
+            @PathVariable String id) {
+        return R.ok().data("test",hospitalService.show(id));
+    }
+
+
 }
